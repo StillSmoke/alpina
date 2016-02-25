@@ -1,3 +1,7 @@
+@font-face {
+font-family: MyFont;
+src: url(https://fonts.gstatic.com/s/ruslandisplay/v7/SREdhlyLNUfU1VssRBfs3vU6mWWEjxQfxRM03tsnJcQ.woff2);
+}
 body {
 	background-image: url('../img/texture-10.gif');
 }
@@ -10,12 +14,26 @@ body {
 	position: relative;
 }
 #mainHeader {
-  background: url("../img/fontHeader.jpg");
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0px;
-  top: -89px;
-  width: 1000px;
-  height: 600px;
-  z-index: 4;
+	background: url("../img/fontHeader.jpg");
+	background-repeat: no-repeat;
+	position: absolute;
+	color: rgb( 176, 169, 169 );
+	text-align: center;
+	font-family: "MyFont";
+	text-shadow: #000 2px 0px 2px, #000 0px 2px 2px, #000 0px -2px 2px, #000 -2px 0px 2px;
+	width: 1000px;
+	height: 600px;
+	z-index: 4;
 }
+#mainHeader p.mainFont {
+	margin: 100px auto;
+	font-size: 80px;
+}
+
+#mainHeader p.additionalFont {
+	position: absolute;
+	margin-left: 390px;
+	margin-top: -50px;
+	font-size: 20px;
+}
+

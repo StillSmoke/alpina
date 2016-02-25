@@ -3,5 +3,5 @@
 	margin: 0 auto;
 	background-color: gray;
 	width: 1000px;
-	height: 5000px;
+	min-height: 2000px;
 }

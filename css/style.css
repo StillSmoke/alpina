@@ -1,7 +1,21 @@
+body {
+	background-image: url('../img/texture-10.gif');
+}
 #MainContainer {
 	display: block;
 	margin: 0 auto;
 	background-color: gray;
 	width: 1000px;
 	min-height: 2000px;
+	position: relative;
+}
+#mainHeader {
+  background: url("../img/fontHeader.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  top: -89px;
+  width: 1000px;
+  height: 600px;
+  z-index: 4;
 }

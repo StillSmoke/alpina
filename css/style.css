@@ -56,6 +56,10 @@ body {
 	border-bottom: 1px solid;
 	background-color: #587976;
 	padding-top: 11px;
+	background-image: url(../img/bg.jpg);
+	background-repeat: repeat;
+	background-position: bottom 0px right 0%;
+	text-align: center;
 }
 #mainMenu ul li:first-child {
 	border-left: 0px;
@@ -65,8 +69,8 @@ body {
 	font-family: "Verdana";
 	text-decoration: none;
 	color: #000;
-	text-align: center;
 	font-size: 17px;
 }
+
 
 

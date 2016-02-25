@@ -1,0 +1,7 @@
+#MainContainer {
+	display: block;
+	margin: 0 auto;
+	background-color: gray;
+	width: 1000px;
+	height: 5000px;
+}

@@ -58,7 +58,7 @@ body {
 	padding-top: 11px;
 	background-image: url(../img/bg.jpg);
 	background-repeat: repeat;
-	background-position: bottom 0px right 0%;
+	background-position: bottom 130px right 0%;
 	text-align: center;
 }
 #mainMenu ul li:first-child {
@@ -71,6 +71,6 @@ body {
 	color: #000;
 	font-size: 17px;
 }
-
-
-
+.animateButton {
+	background-position: bottom 40px right 0% !important;
+}

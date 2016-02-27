@@ -93,7 +93,7 @@ body {
 	text-align: center;
 }
 #products {
-	margin: 10px 100px;
+	margin: 10px 100px 40px;
 	width: 800px;
 	height: 800px;
 	padding-top: 25px;
@@ -143,6 +143,9 @@ h1 {
 	top: 80px;
 	right: 15px;
 }
+#footer span {
+	display: block;
+}
 #footer img {
 	margin-top: 70px;
 	margin-bottom: -10px;
@@ -152,7 +155,7 @@ h1 {
 	bottom: 20px;
 	left: 30px;
 	float: left;
-	opacity: 0.82;
+	opacity: 0.5;
 }
 #footer #social img{
 	width: 28px;
@@ -161,5 +164,6 @@ h1 {
 #footer #copy {
 	position: absolute;
 	bottom: 20px;
-	right: 30px;
+	right: 80px;
 }
+

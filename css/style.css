@@ -76,6 +76,7 @@ body {
 #mainMenu ul li:hover {
 	background-position: center top;
 }
+
 #AboutCompany {
 	box-sizing: border-box;
 	display: block;
@@ -107,6 +108,11 @@ body {
 	border: 1px solid #888888;
 	margin: 30px 49px;
 	padding-top: 30px;
+	opacity: 0.6;
+}
+#products div:hover {
+	opacity: 1;
+	box-shadow: 0px 0px 20px -2px #3a4e4c;
 }
 #products div img {
 	width: 200px;
@@ -118,6 +124,7 @@ body {
 	bottom: 5px;
 	font-family: "Verdana";
 	font-size: 13px;
+	color: #000;
 }
 h1 {
 	font-family: "MyFont";

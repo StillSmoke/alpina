@@ -13,6 +13,7 @@ body {
 	min-height: 1700px;
 	position: relative;
 	box-shadow: 0 0 70px rgba(0,0,0,0.9);
+	margin-top: -16px;
 }
 #mainHeader {
 	background: url("../img/fontHeader.jpg");
@@ -93,13 +94,16 @@ body {
 	display: block;
 	text-align: center;
 }
+
 #products {
-	margin: 10px 100px 40px;
+	margin: 10px 100px 115px;
 	width: 800px;
 	height: 800px;
-	padding-top: 25px;
 }
-#products div {
+#products > img {
+	margin-bottom: -30px; 
+}
+#products div.unchangedProduct {
 	position: relative;
 	box-sizing: border-box;
 	width: 300px;
@@ -109,15 +113,15 @@ body {
 	margin: 30px 49px;
 	padding-top: 30px;
 	opacity: 0.6;
+	cursor: pointer;
 }
-#products div:hover {
-	opacity: 1;
+#products div.unchangedProduct:hover {
 	box-shadow: 0px 0px 20px -2px #3a4e4c;
 }
-#products div img {
+#products div.unchangedProduct img {
 	width: 200px;
 }
-#products div p {
+#products div.unchangedProduct p {
 	text-align: right;
 	position: absolute;
 	right: 15px;
@@ -126,6 +130,53 @@ body {
 	font-size: 13px;
 	color: #000;
 }
+#products div.changedProduct {
+	position: relative;
+	box-sizing: border-box;
+	width: 300px;
+	height: 200px;
+	padding-top: 50px;
+}
+
+#products div.changedProduct img {
+	position: absolute;
+	float: right;
+	margin-top: 15px;
+}
+#products div.changedProduct table {
+	position: absolute;
+	top: 260px;
+	left: -200px;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	font-family: "Verdana";
+	font-size: 12px;
+	color: #000;
+	border: 1px dotted;
+	padding: 15px;
+}
+#products div.changedProduct table tr {
+	border-top: 1px dotted;
+}
+#products div.changedProduct table tr:first-child {
+	border-top: none;
+}
+#products div.changedProduct table td {
+	width: 230px;
+}
+#products div.changedProduct h2 {
+	width: 30%;
+	position: absolute;
+	font-weight: bold;
+	top: 90px;
+	left: -170px;
+	width: 230px;
+	text-align: center;
+	font-family: "Verdana";
+	font-size: 18px;
+}
+
 h1 {
 	font-family: "MyFont";
 	font-size: 25px;
@@ -174,3 +225,6 @@ h1 {
 	right: 80px;
 }
 
+body table {
+	display: none;
+}

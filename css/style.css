@@ -57,8 +57,8 @@ body {
 	border-top: 1px solid;
 	border-bottom: 1px solid;
 	background: url(../img/bg.jpg) no-repeat scroll center bottom;
-	padding-top: 11px;
 	text-align: center;
+	padding-top: 11px;
 }
 #mainMenu ul li:first-child {
 	border-left: 0px;
@@ -72,10 +72,25 @@ body {
 	font-size: 17px;
 	height: 100%;
 	width: 100%;
-	z-index: 100;
+	z-index: 9999999999;
 }
 #mainMenu ul li:hover {
 	background-position: center top;
+	-webkit-animation: linkhover 0.9s 1 ease;
+    -moz-animation: linkhover 0.9s 1 ease; 
+    -o-animation: linkhover 0.9s 1 ease;
+}
+@-webkit-keyframes linkhover {   
+   from { background-position: center bottom;}
+   to { background-position: center top;}
+}
+@-moz-keyframes linkhover { 
+   from { background-position: center bottom;}
+   to { background-position: center top;}
+}
+@-o-keyframes linkhover {  
+   from { background-position: center bottom;}
+   to { background-position: center top;}
 }
 
 #AboutCompany {
@@ -135,26 +150,50 @@ body {
 	box-sizing: border-box;
 	width: 300px;
 	height: 200px;
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 #products div.changedProduct img {
-	position: absolute;
 	float: right;
 	margin-top: 15px;
 }
+
+#products div.changedProduct img#btnBack {
+	position: absolute;
+	top: -87px;
+	left: -292px;
+	width: 30%;
+	cursor: pointer;
+	opacity: 0.5;
+}
+#products div.changedProduct img#btnBack:hover {
+	opacity: 1;
+}
+
+#products div.changedProduct span > img {
+	width: 120%;
+	height: 120%
+}
+
+#products div.changedProduct span {
+	position: absolute;
+	right: -170px;
+	display: block;
+	min-height: 200px;
+	min-width: 150px;
+}
+
 #products div.changedProduct table {
 	position: absolute;
-	top: 260px;
-	left: -200px;
-	display: inline-block;
-	float: left;
-	text-align: left;
+	top: 291px;
+	left: -280px;
+	display: block;
 	font-family: "Verdana";
 	font-size: 12px;
-	color: #000;
 	border: 1px dotted;
-	padding: 15px;
+	padding: 7px;
+	margin: auto;
+	min-height: 130px;
 }
 #products div.changedProduct table tr {
 	border-top: 1px dotted;
@@ -163,17 +202,17 @@ body {
 	border-top: none;
 }
 #products div.changedProduct table td {
-	width: 230px;
+	width: 214px;
 }
 #products div.changedProduct h2 {
 	width: 30%;
 	position: absolute;
 	font-weight: bold;
-	top: 90px;
-	left: -170px;
+	top: 120px;
+	left: -214px;
 	width: 230px;
 	text-align: center;
-	font-family: "Verdana";
+	font-family: "Georgia";
 	font-size: 18px;
 }
 
@@ -185,25 +224,35 @@ h1 {
 }
 #footer {
 	position: relative;
-	font-size: 14px;
   	font-family: "Trebuchet MS";
   	color: rgb( 194, 189, 189 );
 	font-weight: bold;
 	font-style: italic;
 }
-#footer #adress {
+#footer table.footerTable {
 	position: absolute;
-	top: 80px;
-	left: 15px;
-}
-#footer #contacts {
-	position: absolute;
-	top: 80px;
-	right: 15px;
-}
-#footer span {
 	display: block;
+	top: 142px;
+	font-size: 15px;
+	font-family: "Trebuchet MS";
+	color: #3c3c38;
+	text-align: center;
 }
+
+#footer .footerTable td {
+	padding-left: 20px;
+}
+#footer .footerTable td b{
+	color: #beb9b7;
+	font-weight: bold;
+}
+#footer .footerTable.adress {
+	right: 135px;
+}
+#footer .footerTable.contacts {
+	left: 80px;
+}
+
 #footer img {
 	margin-top: 70px;
 	margin-bottom: -10px;
@@ -227,4 +276,23 @@ h1 {
 
 body table {
 	display: none;
+}
+.textile {
+	position: relative;
+	margin-top: 260px;
+	right: -280px;
+	display: block;
+	width: 409px;
+	max-height: 148px;
+	overflow-y: scroll;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    float: right;
+}
+#products div.changedProduct .textile img {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 1px 1px 0px 0px;
+	cursor: pointer;
 }

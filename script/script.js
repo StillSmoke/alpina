@@ -22,4 +22,8 @@ $(document).ready(function() {
 	$('#products span').on('focus', '#phone', function(){
 						$("#phone").mask("+7 (999) 999-99-99");
 	});
+
+	$('#products span').on('focus', '.ordering :text', function(){
+						$(".ordering :text").removeAttr('value');
+	});
 });

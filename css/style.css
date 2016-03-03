@@ -187,24 +187,24 @@ body {
 	box-sizing: border-box;
 	position: absolute;
 	top: 291px;
-	left: -280px;
+	left: -259px;
 	display: block;
 	font-family: "Verdana";
 	font-size: 12px;
-	border: 1px dotted;
-	padding: 7px;
-	margin: auto;
+	border-collapse: collapse;
+	border: 3px solid #BDBCBC;
 	height: 146px;
-	overflow: hidden;
+	overflow: auto;
 }
-#products div.changedProduct table tr {
-	border-top: 1px dotted;
+#products div.changedProduct table tr p{
+	margin: 2px;
 }
-#products div.changedProduct table tr:first-child {
-	border-top: none;
+#products div.changedProduct table tr:nth-child(odd) {
+	background-color: #BDBCBC;
 }
 #products div.changedProduct table td {
-	width: 195px;
+	width: 200px;
+	margin: 7px;
 }
 #products div.changedProduct h2 {
 	width: 30%;
@@ -224,22 +224,70 @@ body {
 #products div.changedProduct .ordering {
 	box-sizing: border-box;
 	position: absolute;
-	bottom: -534px;
-	left: 255px;
-	width: 283px;
-	height: 262px;
-	padding: 65px 20px 20px;
-	background-color: gray;
+	bottom: -576px;
+	left: -140px;
+	width: 580px;
+	height: 270px;
+	padding: 45px 20px 20px;
+	border: 3px dashed #B0A9A9;
 }
 #products div.changedProduct .ordering img {
 	width: 240px;
 }
 
-.submitButton {
-	background: no-repeat left top url(../img/order.png);	
-	line-height: 48px;
+.ordering form label{
+	font-family: "Georgia";
+	font-size: 18px;
+	color: #3a4e4c;
+	font-style: bold;
+}
+
+.ordering form input {
+	width: 260px;
+	height: 33px;
+	background-color: lightgray;
+	border: none;
+	margin-top: 15px;
+	text-align: center;
+	font-family: "Georgia";
+	font-size: 15px;
+	color: #8E8E8E;
+	
+}
+.ordering form [type=text] {
+	margin-top: 25px;
+}
+
+.ordering form input.submitButton {
+	background-color: #3a4e4c;	
+	border-radius: 7px;
+	line-height: 29px;
+	margin-top: 20px;
 	width: 173px;
 	border: none;
+	color: lightgray;
+	font-family: "Georgia";
+	font-size: 15px;
+}
+#products #btnBack {
+	position: absolute;
+	top: 624px;
+	left: 56px;
+	width: 9%;
+	opacity: 0.5;
+}
+#products #btnBack:hover {
+	opacity: 1;
+}
+
+.aboutShipping {
+	width: 600px;
+	height: 695px;
+	align: center;
+	border-radius: 20px;
+	background-color: #909992;
+	padding: 30px;
+	margin-top: 40px;
 }
 
 h1 {
@@ -306,7 +354,7 @@ body table {
 .textile {
 	position: relative;
 	margin-top: 260px;
-	right: -238px;
+	right: -260px;
 	display: block;
 	width: 409px;
 	max-height: 148px;

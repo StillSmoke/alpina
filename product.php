@@ -15,7 +15,7 @@ $id_product = preg_replace('|[^0-9]*|','',$_REQUEST['x']);
 				$temp_arr = preg_split('|&|', $value);
 				echo '<tr>';
 				foreach ($temp_arr as $value) {
-					echo "<td>{$value}</td>";
+					echo "<td><p>{$value}</p></td>";
 				}
 				echo '</tr>';			
 			}
@@ -133,10 +133,9 @@ $id_product = preg_replace('|[^0-9]*|','',$_REQUEST['x']);
         </div>
         <div class="ordering">
                 <form method="post" name="sendContacts" action="orderSucces.php">
-                        <label for="clientName">Введите ваше имя:</label><br>
-                        <input type="text" id="clientName" name="clientName"><br>
-                        <label for="phone">Ваш телефон:</label><br>
-                        <input type="tel" id="phone" name="clientPhone" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}"><br>
+                        <label for="clientName">Для оформления заказа введите:</label><br>
+                        <input type="text" id="clientName" name="clientName" value="Ваше имя"><br>
+                        <input type="tel" id="phone" name="clientPhone" pattern="+7 ([0-9]{3}) [0-9]{3}-[0-9]{2}-[0-9]{2}" value="Номер телефона"><br>
                         <input type="submit" class="submitButton">
                 </form>
         </div>

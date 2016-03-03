@@ -319,6 +319,7 @@ h1 {
 #footer .footerTable td b{
 	color: #beb9b7;
 	font-weight: bold;
+<<<<<<< HEAD
 }
 #footer .footerTable.adress {
 	right: 135px;
@@ -326,6 +327,15 @@ h1 {
 #footer .footerTable.contacts {
 	left: 80px;
 }
+=======
+}
+#footer .footerTable.adress {
+	right: 135px;
+}
+#footer .footerTable.contacts {
+	left: 80px;
+}
+>>>>>>> 40a402a4f02b0ea8b081b40b2bb3fa842c613404
 
 #footer img {
 	margin-top: 70px;
@@ -354,7 +364,11 @@ body table {
 .textile {
 	position: relative;
 	margin-top: 260px;
+<<<<<<< HEAD
 	right: -260px;
+=======
+	right: -280px;
+>>>>>>> 40a402a4f02b0ea8b081b40b2bb3fa842c613404
 	display: block;
 	width: 409px;
 	max-height: 148px;
